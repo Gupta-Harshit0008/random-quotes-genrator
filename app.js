@@ -4,6 +4,7 @@ const quotesRouter=require('./routes/quotesRouter')
 const userRouter=require('./routes/userRouter')
 
 const app=express();
+app.use(express.json())
 
 //middlewares
 app.use(morgan('dev'))
